@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+/*
+### Primary
+
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+*/
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsl(0, 0%, 95%);
+    height: calc(100vh - 1px);
+}
+ 
+.container {
+    display: flex;
+    margin: 2rem auto;
+    flex-direction: column;
+    border-radius: .75rem;
+    overflow: hidden;
+    min-width: 275px;
+    max-width: 325px;
+
+}
+
+.car-type {
+    padding: 2.5rem;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    padding: .5rem 0;
+}
+
+p {
+    font-size: .75rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: .5rem 0;
+    line-height: 1.75rem;
+}
+
+
+#sedan {
+    background-color: hsl(31, 77%, 52%);
+}
+
+#suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+img {
+    width: 48px;
+    margin-bottom: 1rem;
+}
+
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 1rem;
+    cursor: pointer;
+    padding: .5rem 1.5rem;
+    margin-top: 1rem;
+}
+
+#sedan button {
+    color: hsl(31, 77%, 52%);
+}
+
+#suv button {
+    color: hsl(184, 100%, 22%);
+}
+
+#luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+button:hover, button:focus {
+    background-color: inherit;
+}
+
+#sedan button:hover, #suv button:hover, #luxury button:hover,
+#sedan button:focus, #suv button:focus, #luxury button:focus     {
+    color: hsl(0, 0%, 95%);
+}
+
+.attribution { 
+    color:hsl(0, 0%, 11%);
+    font-size: 11px;
+    text-align: center; 
+    margin-bottom: 1rem;
+}
+.attribution a {
+    color: hsl(184, 100%, 22%); 
+}
+
+
+@media (min-width: 600px) {
+    body {
+        height: calc(100vh - 1px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+    }
+
+    .container {
+
+        display: flex;
+        flex-direction: row;
+        margin: 2rem;
+        border-radius: .75rem;
+        min-width: 700px;
+        max-width: 900px;
+        
+    }
+
+    .car-type {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 3rem;
+
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        margin-bottom: 2rem;
+        line-height: 1.25rem;
+    }
+
+    img {
+        width: 56px;
+    }
+    
+    button {
+        width: 150px;
+    }
+}
